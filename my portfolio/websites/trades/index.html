@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolor Home Services — Plumbing & Electrical</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, licensed plumbing and electrical services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><span class="live"></span> 24/7 emergency call-outs · avg. response <b>45 min</b></span>
+      <a href="tel:5550106070">Call (555) 010-6070</a>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#top" class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M9 17l5-9v7h4l-5 9v-7z" fill="#fff"/></svg>
+        Dolor<span>Home</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#estimate">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote" class="btn">Free quote</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="pill">✓ Licensed & insured · Lorem County</span>
+          <h1>Lorem ipsum fixed <span class="hl">today</span>, done right the first time.</h1>
+          <p class="lead">Dolor sit amet, consectetur adipiscing elit. Upfront pricing, tidy technicians and a 2-year guarantee on every job.</p>
+          <div class="hero-actions">
+            <a href="#quote" class="btn btn-lg">Get a free quote</a>
+            <a href="tel:5550106070" class="btn btn-outline btn-lg">☎ (555) 010-6070</a>
+          </div>
+          <div class="trust">
+            <div class="avatars"><span>LR</span><span>IP</span><span>DS</span><span>+</span></div>
+            <div><b>4.9/5</b> from 1,200+ local homeowners<br><span class="stars">★★★★★</span></div>
+          </div>
+        </div>
+
+        <form class="quote-card reveal" id="quote" novalidate>
+          <h2>Request a callback</h2>
+          <p>We'll call you back within 15 minutes.</p>
+          <label>What do you need?
+            <select id="qService" required>
+              <option value="">Select a service</option>
+              <option>Leak or burst pipe</option>
+              <option>Blocked drain</option>
+              <option>Water heater</option>
+              <option>Electrical fault</option>
+              <option>Rewiring / panel upgrade</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Name <input id="qName" type="text" placeholder="Lorem Ipsum" required></label>
+          <label>Phone <input id="qPhone" type="tel" placeholder="(555) 010-2030" required></label>
+          <label>ZIP code <input id="qZip" type="text" inputmode="numeric" placeholder="01234" maxlength="5" required></label>
+          <label class="check"><input type="checkbox" id="qUrgent"> It's an emergency</label>
+          <button class="btn btn-lg full" type="submit">Call me back</button>
+          <p class="form-msg" id="qMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><b data-count="15">0</b><span>Years in business</span></div>
+        <div class="stat reveal"><b data-count="8400" data-suffix="+">0</b><span>Jobs completed</span></div>
+        <div class="stat reveal"><b data-count="45" data-suffix=" min">0</b><span>Avg. response time</span></div>
+        <div class="stat reveal"><b data-count="2" data-suffix=" yr">0</b><span>Workmanship guarantee</span></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>One call for the whole house.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2.7S6 9.5 6 14a6 6 0 0012 0c0-4.5-6-11.3-6-11.3z"/></svg></div>
+            <h3>Leak repair</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p><a href="#quote">Book this →</a>
+          </article>
+          <article class="service reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v4H4zM7 8v12M17 8v12M7 14h10"/></svg></div>
+            <h3>Drain cleaning</h3><p>Do eiusmod tempor incididunt ut labore et dolore magna.</p><a href="#quote">Book this →</a>
+          </article>
+          <article class="service reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 17h4M12 6v6"/></svg></div>
+            <h3>Water heaters</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p><a href="#quote">Book this →</a>
+          </article>
+          <article class="service reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+            <h3>Electrical repairs</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit.</p><a href="#quote">Book this →</a>
+          </article>
+          <article class="service reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h3M8 11h3M8 15h3M14 7v10"/></svg></div>
+            <h3>Panel upgrades</h3><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p><a href="#quote">Book this →</a>
+          </article>
+          <article class="service reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/></svg></div>
+            <h3>Lighting install</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p><a href="#quote">Book this →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-dark" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps. Zero surprises.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span>1</span><h3>Tell us the problem</h3><p>Lorem ipsum dolor sit amet — call, text or use the form. Photos help.</p></li>
+          <li class="reveal"><span>2</span><h3>Get a fixed price</h3><p>Consectetur adipiscing elit. You approve the price before we lift a tool.</p></li>
+          <li class="reveal"><span>3</span><h3>Job done, guaranteed</h3><p>Sed do eiusmod tempor. We clean up and back it with a 2-year warranty.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ESTIMATOR -->
+    <section class="section" id="estimate">
+      <div class="container est-grid">
+        <div class="reveal">
+          <p class="eyebrow">Upfront pricing</p>
+          <h2>Ballpark your job in seconds.</h2>
+          <p>Lorem ipsum dolor sit amet. These are typical ranges — your technician confirms a fixed price on site before any work begins.</p>
+          <ul class="ticks">
+            <li>No call-out fee with any repair</li>
+            <li>Senior & veteran discount 10%</li>
+            <li>Financing available on jobs over $1,000</li>
+          </ul>
+        </div>
+        <div class="estimator reveal">
+          <label for="eJob">Job type</label>
+          <select id="eJob">
+            <option value="leak">Leak repair</option>
+            <option value="drain">Drain cleaning</option>
+            <option value="heater">Water heater replacement</option>
+            <option value="outlet">Outlets & switches</option>
+            <option value="panel">Panel upgrade</option>
+            <option value="light">Light fixtures</option>
+          </select>
+          <label for="eQty">How many? <output id="eQtyOut">1</output></label>
+          <input type="range" id="eQty" min="1" max="10" value="1">
+          <div class="seg" id="eWhen">
+            <button type="button" class="active" data-m="1">Standard</button>
+            <button type="button" data-m="1.35">Same day</button>
+            <button type="button" data-m="1.7">After hours</button>
+          </div>
+          <div class="result">
+            <span>Estimated cost</span>
+            <b id="eResult">$—</b>
+            <small id="eNote"></small>
+          </div>
+          <a href="#quote" class="btn full">Lock in this price</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2>Trusted by your neighbours.</h2>
+        </div>
+        <div class="reviews">
+          <figure class="review reveal"><div class="stars">★★★★★</div><blockquote>“Lorem ipsum dolor sit amet, showed up in 30 minutes on a Sunday. Consectetur adipiscing — fixed and cleaned up.”</blockquote><figcaption><b>Lorem R.</b> · Burst pipe</figcaption></figure>
+          <figure class="review reveal"><div class="stars">★★★★★</div><blockquote>“Sed do eiusmod tempor. Price on the phone was exactly the price on the bill. Ut labore et dolore.”</blockquote><figcaption><b>Ipsum K.</b> · Panel upgrade</figcaption></figure>
+          <figure class="review reveal"><div class="stars">★★★★★</div><blockquote>“Ut enim ad minim veniam. Friendly, tidy, wore shoe covers. Quis nostrud — we'll use them for everything.”</blockquote><figcaption><b>Dolor M.</b> · Water heater</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions? Answered.</h2>
+          <p>Can't find yours? Call us on <a href="tel:5550106070">(555) 010-6070</a>.</p>
+        </div>
+        <div class="faq reveal" id="faqList">
+          <details open><summary>Do you charge a call-out fee?</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. The call-out fee is waived with any repair.</p></details>
+          <details><summary>Are you licensed and insured?</summary><p>Sed do eiusmod tempor incididunt ut labore. Yes — fully licensed, bonded and insured. License #LOREM-01234.</p></details>
+          <details><summary>What areas do you cover?</summary><p>Ut enim ad minim veniam, quis nostrud exercitation. Lorem City and 25 miles around.</p></details>
+          <details><summary>Do you offer a guarantee?</summary><p>Duis aute irure dolor in reprehenderit. Every job carries a 2-year workmanship guarantee.</p></details>
+          <details><summary>How do I pay?</summary><p>Excepteur sint occaecat cupidatat. Card, cash, bank transfer or monthly financing.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Something leaking or sparking?</h2>
+          <p>Lorem ipsum — a real person answers, day or night.</p>
+        </div>
+        <a href="tel:5550106070" class="btn btn-white btn-lg">☎ Call now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M9 17l5-9v7h4l-5 9v-7z" fill="#fff"/></svg>Dolor<span>Home</span></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Family-owned since 2010.</p>
+      </div>
+      <div><h4>Services</h4><a href="#services">Plumbing</a><a href="#services">Electrical</a><a href="#services">Water heaters</a><a href="#services">Emergencies</a></div>
+      <div><h4>Company</h4><a href="#process">How it works</a><a href="#estimate">Pricing</a><a href="#faq">FAQ</a><a href="#quote">Contact</a></div>
+      <div><h4>Contact</h4><a href="tel:5550106070">(555) 010-6070</a><a href="mailto:help@dolorhome.com">help@dolorhome.com</a><span>789 Dolor Rd, Lorem City</span></div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> Dolor Home Services · License #LOREM-01234</div>
+  </footer>
+
+  <a href="tel:5550106070" class="call-fab" aria-label="Call now">☎</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
