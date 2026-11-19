@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Lorem — Bakery & Café</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, artisan bakery and café.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#top" class="logo">Maison <em>Lorem</em></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a href="#order" class="btn btn-small">Order ahead</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="status" id="openStatus"><span class="dot"></span><span class="status-text">Checking hours…</span></span>
+          <h1>Lorem ipsum, <em>baked</em> fresh every morning.</h1>
+          <p class="lead">Dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — since 2012.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn">See the menu</a>
+            <a href="#visit" class="btn btn-ghost">Find us</a>
+          </div>
+          <ul class="hero-meta">
+            <li><strong>4.9★</strong> 320+ reviews</li>
+            <li><strong>6am</strong> doors open</li>
+            <li><strong>100%</strong> scratch-made</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal">
+          <div class="blob blob-a"></div>
+          <div class="blob blob-b"></div>
+          <div class="art-card">
+            <svg viewBox="0 0 200 160" aria-hidden="true">
+              <path d="M30 110 Q30 50 100 45 Q170 50 170 110 Z" fill="#e3a46f"/>
+              <path d="M30 110 Q30 50 100 45 Q170 50 170 110 Z" fill="none" stroke="#2b211c" stroke-width="3"/>
+              <path d="M65 70 q10 15 0 30 M100 60 q10 18 0 40 M135 70 q10 15 0 30" stroke="#b8703f" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <rect x="20" y="108" width="160" height="14" rx="7" fill="#2b211c"/>
+            </svg>
+            <span class="art-label">Sourdough · 24h ferment</span>
+          </div>
+          <div class="sticker">Fresh<br>daily</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><span>01</span> Lorem flour, stone-milled</div>
+        <div><span>02</span> Ipsum coffee, roasted local</div>
+        <div><span>03</span> Dolor butter, cultured</div>
+        <div><span>04</span> Amet love, always</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-img reveal">
+          <div class="img-ph img-1"><span>Your photo here</span></div>
+          <div class="img-ph img-2"><span>Photo</span></div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Our story</p>
+          <h2>A small bakery with a big oven.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <div class="signature">— Lorem & Ipsum, founders</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section-tint" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The menu</p>
+          <h2>Something for every craving.</h2>
+        </div>
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" data-tab="bread" role="tab">Breads</button>
+          <button class="tab" data-tab="pastry" role="tab">Pastries</button>
+          <button class="tab" data-tab="coffee" role="tab">Coffee</button>
+          <button class="tab" data-tab="lunch" role="tab">Lunch</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2>Neighbours say it best.</h2>
+        </div>
+        <div class="reviews">
+          <blockquote class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Lorem ipsum dolor sit amet, the croissants are consectetur adipiscing. Best in town, sed do eiusmod.”</p>
+            <footer><span class="avatar">LM</span> Lorem M.</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Ut enim ad minim veniam, quis nostrud. My Saturday ritual — exercitation ullamco laboris.”</p>
+            <footer><span class="avatar">IP</span> Ipsum P.</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Duis aute irure dolor in reprehenderit. The sourdough is unreal, voluptate velit esse.”</p>
+            <footer><span class="avatar">DS</span> Dolor S.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section class="section section-dark" id="order">
+      <div class="container order-grid">
+        <div class="reveal">
+          <p class="eyebrow light">Order ahead</p>
+          <h2>Skip the queue. Lorem ipsum.</h2>
+          <p>Place your order by 6pm and pick it up warm the next morning. Celebration cakes need 48 hours' notice.</p>
+        </div>
+        <form class="form reveal" id="orderForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Lorem Ipsum" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 010-2030" required>
+          </div>
+          <div class="field">
+            <label for="date">Pickup date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+          <div class="field full">
+            <label for="items">Your order</label>
+            <textarea id="items" name="items" rows="3" placeholder="2× sourdough, 4× croissant…" required></textarea>
+          </div>
+          <button type="submit" class="btn full">Send order</button>
+          <p class="form-msg" id="orderMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section" id="visit">
+      <div class="container visit-grid">
+        <div class="reveal">
+          <p class="eyebrow">Visit us</p>
+          <h2>Come say hello.</h2>
+          <address>
+            123 Lorem Street<br>Ipsum City, ST 01234<br>
+            <a href="tel:5550102030">(555) 010-2030</a><br>
+            <a href="mailto:hello@maisonlorem.com">hello@maisonlorem.com</a>
+          </address>
+        </div>
+        <div class="hours reveal">
+          <h3>Opening hours</h3>
+          <ul id="hoursList"></ul>
+        </div>
+        <div class="map reveal" aria-label="Map placeholder">
+          <div class="pin"></div>
+          <span>Map embed goes here</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo">Maison <em>Lorem</em></a>
+      <p>© <span id="year"></span> Maison Lorem. Lorem ipsum dolor sit amet.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
